@@ -1,3 +1,5 @@
+import './globals.css'
+
 export const metadata = {
   title: "Home",
   description: "Welcome to the Home Page",
@@ -7,15 +9,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta charSet="utf-8" />
-        <meta content="Home" property="og:title" />
-        <meta content="Home" property="twitter:title" />
-        <meta
-          content="width=device-width, initial-scale=1"
-          name="viewport"
-        />
         <meta content="Webflow" name="generator" />
-        <link rel="stylesheet" href="/styles/globals.css" />
+        {/* <link rel="stylesheet" href="/globals.css" /> */}
         <link href="/styles/normalize.css" rel="stylesheet" />
         <link href="/styles/webflow.css" rel="stylesheet" />
         <link href="/styles/ufund-new-site.webflow.css" rel="stylesheet" />

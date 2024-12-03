@@ -726,7 +726,7 @@
 }
 
 .tab.tab-link-tab-2.w--current {
-  background-color: #fff;
+  /* background-color: #fff; */
   border: 2px solid #ff00b0;
   padding-top: 16px;
   padding-bottom: 16px;

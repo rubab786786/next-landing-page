@@ -5,7 +5,7 @@ const About = () => {
     <>
     <section id="about" className="about-section">
           <div className="w-layout-blockcontainer about-container w-container">
-            <h1 className="about-heading">About UFUND platform</h1>
+            <h1 className="about-heading" style={{fontFamily:"THICCCBOI"}}>About UFUND platform</h1>
             <p className="about-text">
               With Blockchain, &nbsp;the driving force behind UFUND Platform is to
               empower companies and individuals to navigate funding and new investment

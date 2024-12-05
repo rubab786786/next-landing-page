@@ -17,7 +17,7 @@ const Section2 = () => {
               alt=""
               className="image-17"
             />
-            <h1 className="feature-heading">Invest Anywhere, Anytime</h1>
+            <h1 className="feature-heading" style={{fontFamily:"THICCCBOI"}}>Invest Anywhere, Anytime</h1>
             <div className="invest-text">
               UFUND is available for both iOS and Android phones
             </div>

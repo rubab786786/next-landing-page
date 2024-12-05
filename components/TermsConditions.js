@@ -8,7 +8,7 @@ const TermsConditions = () => {
     <Navbar />
     <section id="hero" className="section-terms">
           <div className="w-layout-blockcontainer container-terms w-container">
-            <h1 className="heading-terms">Terms of services</h1>
+            <h1 className="heading-terms" style={{fontFamily:"THICCCBOI"}}>Terms of services</h1>
             <a href="#" className="button w-button">
               Last updated April 12, 2022{" "}
             </a>

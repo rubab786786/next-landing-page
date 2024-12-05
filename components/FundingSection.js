@@ -13,7 +13,7 @@ const FundingSection = () => {
                 id="w-node-bc4dfb0c-4859-41e4-9f56-caeeb28ace7d-fbb97df6"
                 className="w-layout-cell cell-20"
               >
-                <h1 className="feature-heading">Crowdfunding For Business</h1>
+                <h1 className="feature-heading" style={{fontFamily:"THICCCBOI"}}>Crowdfunding For Business</h1>
                 <div className="text-block-6">
                   One of the biggest advantages of crowdfunding with UFUND is to
                   provide access to a larger and more diverse group of investors.

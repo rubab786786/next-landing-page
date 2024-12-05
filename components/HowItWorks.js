@@ -16,7 +16,7 @@ const HowItWorks = () => {
     <>
      <section id="how-it-works" className="feature-section-1">
           <div className="w-layout-blockcontainer feature-container-1 w-container">
-            <h1 className="pr-heading">Welcome To UFUND&nbsp;Program</h1>
+            <h1 className="pr-heading" style={{fontFamily:"THICCCBOI"}}>Welcome To UFUND&nbsp;Program</h1>
             <p className="paragraph-7">
               We're thrilled to have you join us &nbsp;to unlocking opportunities and
               maximizing returns.
@@ -43,13 +43,15 @@ const HowItWorks = () => {
                   <button
                     className="tab-button"
                     style={{
-                      padding: "0.5rem 1rem",
+                      padding: "16px 36px",
                       backgroundColor: "#fafafa",
                       border: "none",
                       color: "#000000",
                       cursor: "pointer",
                       borderRadius: "25rem",
                       textTransform: "uppercase",
+                      fontFamily:"THICCCBOI",
+                      fontSize:18,
                       fontWeight: newActiveTab === "investors" ? 600 : 400,
                     }}
                   >
@@ -72,13 +74,15 @@ const HowItWorks = () => {
                   <button
                     className="tab-button"
                     style={{
-                      padding: "0.5rem 1rem",
+                      padding: "16px 36px",
                       backgroundColor: "#fafafa",
                       border: "none",
                       color: "#000000",
                       cursor: "pointer",
                       borderRadius: "25rem",
                       textTransform: "uppercase",
+                      fontFamily:"THICCCBOI",
+                      fontSize:18,
                       fontWeight: newActiveTab === "business" ? 600 : 400,
                     }}
                   >
@@ -400,34 +404,35 @@ const HowItWorks = () => {
                       </div>
                     </div>
                     <div className="w-layout-blockcontainer container-5 w-container">
-                      <h1 className="heading-5">Features For Business Campaigners</h1>
-                      <Carousel className="w-full max-w-[800px] mx-auto p-5"> {/* Set max width to match the second carousel */}
-                        <CarouselContent >
-                          <CarouselItem className="md:basis-1/3 lg:basis-1/4">
-                          <h1 className="heading-6">Dashboard</h1>
-                          <img loading="lazy" src="/images/Rectangle-16.png" alt="" className="image-13" />
-                          </CarouselItem>
-                          <CarouselItem className="md:basis-1/3 lg:basis-1/4">
-                          <h1 className="heading-6">Categories</h1>
-                          <img loading="lazy" src="/images/Rectangle-16-1.png" alt="" className="image-13" />
-                          </CarouselItem>
-                          <CarouselItem className="md:basis-1/3 lg:basis-1/4">
-                          <h1 className="heading-6">My Product Investment</h1>
-                          <img loading="lazy" src="/images/Rectangle-16-2.png" alt="" className="image-13" />
-                          </CarouselItem>
-                          <CarouselItem className="md:basis-1/3 lg:basis-1/4">
-                          <h1 className="heading-6">New Products</h1>
-                          <img loading="lazy" src="/images/Rectangle-16-5.png" alt="" className="image-13" />
-                          </CarouselItem>
-                          <CarouselItem className="md:basis-1/3 lg:basis-1/4">
-                          <h1 className="heading-6">New Tokenized Assets</h1>
-                          <img loading="lazy" src="/images/Rectangle-16-6.png" alt="" className="image-13" />
-                          </CarouselItem>
-                        </CarouselContent>
-                        <CarouselPrevious />
-                        <CarouselNext />
-                      </Carousel>
-                    </div>
+  <h1 className="heading-5">Features For Investors</h1>
+  <Carousel className="w-full max-w-[800px] mx-auto p-5">
+    <CarouselContent>
+      <CarouselItem className="md:basis-1/3 lg:basis-1/4 bg-white p-4 rounded shadow">
+        <h1 className="heading-6">Dashboard</h1>
+        <img loading="lazy" src="/images/Rectangle-16.png" alt="" className="image-13" />
+      </CarouselItem>
+      <CarouselItem className="md:basis-1/3 lg:basis-1/4 bg-white p-4 rounded shadow">
+        <h1 className="heading-6">Categories</h1>
+        <img loading="lazy" src="/images/Rectangle-16-1.png" alt="" className="image-13" />
+      </CarouselItem>
+      <CarouselItem className="md:basis-1/3 lg:basis-1/4 bg-white p-4 rounded shadow">
+        <h1 className="heading-6">My Product Investment</h1>
+        <img loading="lazy" src="/images/Rectangle-16-2.png" alt="" className="image-13" />
+      </CarouselItem>
+      <CarouselItem className="md:basis-1/3 lg:basis-1/4 bg-white p-4 rounded shadow">
+        <h1 className="heading-6">New Products</h1>
+        <img loading="lazy" src="/images/Rectangle-16-5.png" alt="" className="image-13" />
+      </CarouselItem>
+      <CarouselItem className="md:basis-1/3 lg:basis-1/4 bg-white p-4 rounded shadow">
+        <h1 className="heading-6">New Tokenized Assets</h1>
+        <img loading="lazy" src="/images/Rectangle-16-6.png" alt="" className="image-13" />
+      </CarouselItem>
+    </CarouselContent>
+    <CarouselPrevious />
+    <CarouselNext />
+  </Carousel>
+</div>
+
                   </div>
                 )}
               </div>

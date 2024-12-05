@@ -5,7 +5,7 @@ const Section3 = () => {
     <>
     <section className="section-3">
           <div className="w-layout-blockcontainer container-4 w-container">
-            <h1 className="h4">Offers To Our Clients</h1>
+            <h1 className="h4" style={{fontFamily:"THICCCBOI"}}>Offers To Our Clients</h1>
             <div className="offers-text">
               Investors :SECURED INVESTMENTS opportunities in real economy &nbsp;with
               substantial return in &nbsp;short terms :60-90-120-180 Days

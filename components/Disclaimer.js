@@ -8,7 +8,7 @@ const Disclaimer = () => {
     <Navbar />
     <section className="section-disc">
           <div className="w-layout-blockcontainer container-disc w-container">
-            <h1 className="heading-terms">Disclaimer</h1>
+            <h1 className="heading-terms" style={{fontFamily:"THICCCBOI"}}>Disclaimer</h1>
             <a href="#" className="button w-button">
               Last updated April 12, 2022
             </a>

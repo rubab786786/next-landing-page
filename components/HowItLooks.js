@@ -43,13 +43,15 @@ const HowItLooks = () => {
                   <button
                     className="tab-button"
                     style={{
-                      padding: "0.5rem 1rem",
+                      padding: "16px 36px",
                       backgroundColor: "#fafafa",
                       border: "none",
                       color: "#000000",
                       cursor: "pointer",
                       borderRadius: "25rem",
                       textTransform: "uppercase",
+                      fontFamily:"THICCCBOI",
+                      fontSize:18,
                       fontWeight: activeTab === "mobile" ? 600 : 400,
                     }}
                   >
@@ -73,14 +75,16 @@ const HowItLooks = () => {
                   <button
                     className="tab-button"
                     style={{
-                      padding: "0.5rem 1rem",
+                      padding: "16px 36px",
                       backgroundColor: "#fafafa",
                       border: "none",
                       color: "#000000",
                       cursor: "pointer",
                       borderRadius: "25rem",
                       textTransform: "uppercase",
-                      fontWeight: activeTab === "desktop" ? 600 : 400,
+                      fontFamily:"THICCCBOI",
+                      fontSize:18,
+                      fontWeight: activeTab === "desktop" ? 700 : 500,
                     }}
                   >
                     Desktop
@@ -115,7 +119,7 @@ const HowItLooks = () => {
                             id="w-node-aaf41455-63e2-560a-fa71-b50112771753-fbb97df6"
                             className="w-layout-cell content-cell"
                           >
-                            <h1 className="feature-sub-heading">
+                            <h1 className="feature-sub-heading" style={{fontFamily:"THICCCBOI"}}>
                               Seamlessly designed with mobile users in mind.
                             </h1>
                             <p className="feature-sub-paragraph">

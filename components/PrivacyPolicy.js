@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
     <Navbar />
     <section id="hero" className="section-privacy">
           <div className="w-layout-blockcontainer container-privacy w-container">
-            <h1 className="heading-terms">Privacy Policy</h1>
+            <h1 className="heading-terms" style={{fontFamily:"THICCCBOI"}}>Privacy Policy</h1>
             <a href="#" className="button w-button">
               Last updated April 12, 2022
             </a>

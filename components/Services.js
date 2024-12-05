@@ -9,7 +9,7 @@ const Services = () => {
               <div className="uui-padding-vertical-xhuge-3">
                 <div className="uui-text-align-center">
                   <div className="uui-max-width-large-2 align-center">
-                    <h1 className="feature-heading">Our Services</h1>
+                    <h1 className="feature-heading" style={{fontFamily:"THICCCBOI"}}>Our Services</h1>
                     <div className="services-text">
                       Explore our cutting-edge services in crowdfunding and
                       tokenization, revolutionizing how you invest in small and

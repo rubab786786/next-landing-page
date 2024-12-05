@@ -576,7 +576,11 @@
 .image-2 {
   width: 100%;
 }
-
+.custom-dimensions {
+  width: 1105px;
+  height: 820px;
+  object-fit: cover; /* Optional: ensures the image fits nicely */
+}
 .paragraph-5 {
   margin-bottom: 0;
   font-family: Inter, sans-serif;
@@ -1019,7 +1023,7 @@
 .h {
   color: #1d222d;
   margin-bottom: 16px;
-  font-family: Inter, sans-serif;
+  font-family: THICCCBOI, sans-serif;
   font-size: 28px;
   line-height: 36px;
 }

@@ -196,7 +196,7 @@ const Hero = () => {
                         </defs>
                       </svg>
                     </div>
-                    <div className="spark-button-text-copy">Watch Demo Now</div>
+                    <div className="spark-button-text-copy" style={{fontFamily:"Inter"}}>Watch Demo Now</div>
                   </a>
                 </div>
               </div>

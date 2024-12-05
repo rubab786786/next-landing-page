@@ -36,8 +36,8 @@
 }
 
 .w-layout-layout {
-  /* grid-row-gap: 12px;
-  grid-column-gap: 12px; */
+  grid-row-gap: 12px;
+  grid-column-gap: 12px;
   grid-auto-columns: 1fr;
   justify-content: center;
   padding: 20px;

@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="brix---header-wrapper w-nav" style={{fontFamily:"Inter"}}>
+    <nav className="brix---header-wrapper w-nav" style={{fontFamily:"Inter, sans-serif"}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}

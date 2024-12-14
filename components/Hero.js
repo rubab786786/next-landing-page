@@ -4,6 +4,15 @@ const Hero = () => {
   const arrowImageStylesTop = {
     animation: 'moveUpDown 1.4s linear infinite',
   };
+
+  const slideInFromRightStyles = {
+    animation: 'slideInFromRight 1.2s ease-out forwards', // Speed of animation and smooth easing
+    opacity: 0, // Start with opacity 0
+    transformStyle: 'preserve-3d',
+    willChange: 'transform, opacity', // Optimizing performance
+  };
+
+
   const keyframes = `
   @keyframes moveUpDown {
     0%, 100% {
@@ -11,6 +20,17 @@ const Hero = () => {
     }
     50% {
       transform: translateY(-4px);
+    }
+  }
+
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(20%); /* Off the screen to the right */
+      opacity: 0; /* Start invisible */
+    }
+    100% {
+      transform: translateX(0); /* End at the natural position */
+      opacity: 1; /* Become fully visible */
     }
   }
 `;
@@ -225,6 +245,7 @@ const Hero = () => {
               alt=""
               srcSet="/images/hero-test-bg-p-500.png 500w, /images/hero-test-bg-p-800.png 800w, /images/hero-test-bg-p-1080.png 1080w, /images/hero-test-bg-p-1600.png 1600w, /images/hero-test-bg.png 2032w"
               className="image-2"
+              style={slideInFromRightStyles} // Apply animation styles
             />
           </div>
         </div>

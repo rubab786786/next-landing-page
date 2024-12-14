@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 // import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import {
@@ -9,15 +9,38 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import CardItems from "./CardItems";
 const HowItWorks = () => {
   const [newActiveTab, setNewActiveTab] = useState("investors");
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect screen size
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <>
       <section id="how-it-works" className="feature-section-1">
-        <div className="w-layout-blockcontainer feature-container-1 w-container">
-          <h1 className="pr-heading" style={{ fontFamily: "THICCCBOI" }}>Welcome To UFUND&nbsp;Program</h1>
-          <p className="paragraph-7">
+        <div className="w-layout-blockcontainer feature-container-1 w-container"
+        style={{
+          padding: isMobile ? "20px" : "0px",
+          textAlign: isMobile ? "center":"left",
+        }}>
+          <h1 className="pr-heading"
+          style={{
+            fontFamily: "THICCCBOI",
+            fontSize: isMobile ? "24px" : "36px",
+          }}>Welcome To UFUND&nbsp;Program</h1>
+          <p className="paragraph-7"
+           style={{
+            fontSize: isMobile ? "14px" : "18px",
+            lineHeight: isMobile ? "20px" : "28px",
+            marginBottom: isMobile ? "20px" : "30px",
+          }}>
             We're thrilled to have you join us &nbsp;to unlocking opportunities and
             maximizing returns.
             <br />
@@ -231,32 +254,27 @@ const HowItWorks = () => {
                   </div>
                   <div className="w-layout-blockcontainer container-5 w-container">
                     <h1 className="heading-5">Features For Investors</h1>
-                    <Carousel className="w-full max-w-[800px] mx-auto p-5"> {/* Set max width to match the second carousel */}
-                      <CarouselContent >
-                        <CarouselItem className="md:basis-1/3 lg:basis-1/4">
-                          <h1 className="heading-6">Dashboard</h1>
-                          <img loading="lazy" src="/images/Rectangle-16.png" alt="" className="image-13" />
-                        </CarouselItem>
-                        <CarouselItem className="md:basis-1/3 lg:basis-1/4">
-                          <h1 className="heading-6">Categories</h1>
-                          <img loading="lazy" src="/images/Rectangle-16-1.png" alt="" className="image-13" />
-                        </CarouselItem>
-                        <CarouselItem className="md:basis-1/3 lg:basis-1/4">
-                          <h1 className="heading-6">My Product Investment</h1>
-                          <img loading="lazy" src="/images/Rectangle-16-2.png" alt="" className="image-13" />
-                        </CarouselItem>
-                        <CarouselItem className="md:basis-1/3 lg:basis-1/4">
-                          <h1 className="heading-6">New Products</h1>
-                          <img loading="lazy" src="/images/Rectangle-16-5.png" alt="" className="image-13" />
-                        </CarouselItem>
-                        <CarouselItem className="md:basis-1/3 lg:basis-1/4">
-                          <h1 className="heading-6">New Tokenized Assets</h1>
-                          <img loading="lazy" src="/images/Rectangle-16-6.png" alt="" className="image-13" />
-                        </CarouselItem>
-                      </CarouselContent>
-                      <CarouselPrevious />
-                      <CarouselNext />
-                    </Carousel>
+                    <Carousel className="w-full max-w-[800px] mx-auto p-5">
+                        <CarouselContent >
+                          <CarouselItem className="md:basis-1/3 lg:basis-1/4">
+                            <CardItems heading="Dashboard" img={"/images/Rectangle-16.png"} />
+                          </CarouselItem>
+                          <CarouselItem className="md:basis-1/3 lg:basis-1/4">
+                            <CardItems heading="Categories" img={"/images/Rectangle-16-1.png"} />
+                          </CarouselItem>
+                          <CarouselItem className="md:basis-1/3 lg:basis-1/4">
+                            <CardItems heading="My Product Investment" img={"/images/Rectangle-16-2.png"} />
+                          </CarouselItem>
+                          <CarouselItem className="md:basis-1/3 lg:basis-1/4">
+                            <CardItems heading="New Products" img={"/images/Rectangle-16-5.png"} />
+                          </CarouselItem>
+                          <CarouselItem className="md:basis-1/3 lg:basis-1/4">
+                            <CardItems heading="New Tokenized Assets" img={"/images/Rectangle-16-6.png"} />
+                          </CarouselItem>
+                        </CarouselContent>
+                        <CarouselPrevious />
+                        <CarouselNext />
+                      </Carousel>
                   </div>
                 </div>
               )}
@@ -405,32 +423,27 @@ const HowItWorks = () => {
                   </div>
                   <div className="w-layout-blockcontainer container-5 w-container">
                     <h1 className="heading-5">Features For Business Campaigners</h1>
-                    <Carousel className="w-full max-w-[800px] mx-auto p-5"> {/* Set max width to match the second carousel */}
-                      <CarouselContent >
-                        <CarouselItem className="md:basis-1/3 lg:basis-1/4">
-                          <h1 className="heading-6">Dashboard</h1>
-                          <img loading="lazy" src="/images/Rectangle-16.png" alt="" className="image-13" />
-                        </CarouselItem>
-                        <CarouselItem className="md:basis-1/3 lg:basis-1/4">
-                          <h1 className="heading-6">Categories</h1>
-                          <img loading="lazy" src="/images/Rectangle-16-1.png" alt="" className="image-13" />
-                        </CarouselItem>
-                        <CarouselItem className="md:basis-1/3 lg:basis-1/4">
-                          <h1 className="heading-6">My Product Investment</h1>
-                          <img loading="lazy" src="/images/Rectangle-16-2.png" alt="" className="image-13" />
-                        </CarouselItem>
-                        <CarouselItem className="md:basis-1/3 lg:basis-1/4">
-                          <h1 className="heading-6">New Products</h1>
-                          <img loading="lazy" src="/images/Rectangle-16-5.png" alt="" className="image-13" />
-                        </CarouselItem>
-                        <CarouselItem className="md:basis-1/3 lg:basis-1/4">
-                          <h1 className="heading-6">New Tokenized Assets</h1>
-                          <img loading="lazy" src="/images/Rectangle-16-6.png" alt="" className="image-13" />
-                        </CarouselItem>
-                      </CarouselContent>
-                      <CarouselPrevious />
-                      <CarouselNext />
-                    </Carousel>
+                      <Carousel className="w-full max-w-[800px] mx-auto p-5">
+                        <CarouselContent >
+                          <CarouselItem className="md:basis-1/3 lg:basis-1/4">
+                            <CardItems heading="Dashboard" img={"/images/Rectangle-16.png"} />
+                          </CarouselItem>
+                          <CarouselItem className="md:basis-1/3 lg:basis-1/4">
+                            <CardItems heading="Categories" img={"/images/Rectangle-16-1.png"} />
+                          </CarouselItem>
+                          <CarouselItem className="md:basis-1/3 lg:basis-1/4">
+                            <CardItems heading="My Product Investment" img={"/images/Rectangle-16-2.png"} />
+                          </CarouselItem>
+                          <CarouselItem className="md:basis-1/3 lg:basis-1/4">
+                            <CardItems heading="New Products" img={"/images/Rectangle-16-5.png"} />
+                          </CarouselItem>
+                          <CarouselItem className="md:basis-1/3 lg:basis-1/4">
+                            <CardItems heading="New Tokenized Assets" img={"/images/Rectangle-16-6.png"} />
+                          </CarouselItem>
+                        </CarouselContent>
+                        <CarouselPrevious />
+                        <CarouselNext />
+                      </Carousel>
                   </div>
 
                 </div>

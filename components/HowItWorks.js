@@ -48,7 +48,7 @@ const HowItWorks = () => {
             aspirations.
           </p>
           <div className="tabs-container">
-            <div className="tabs-list" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <div className="tabs-list" style={{ display: "flex", justifyContent: "center",flexDirection:isMobile?"column":"row", alignItems: "center" }}>
               <div
                 className={`tab-button-outer ${newActiveTab === "investors" ? "active" : ""}`}
                 style={{
@@ -57,25 +57,25 @@ const HowItWorks = () => {
                     : "transparent",
                   borderRadius: "25rem",
                   padding: "2px",
-                  marginBottom: "12px",
+                  margin: "10px",
                   width: "max-content",
-                  marginRight: "15px",
                 }}
                 onClick={() => setNewActiveTab("investors")}
               >
                 <button
                   className="tab-button"
                   style={{
-                    padding: "16px 36px",
+                    padding:isMobile ? "10px 20px" : "16px 36px",
                     backgroundColor: "#fafafa",
                     border: "none",
                     color: "#000000",
                     cursor: "pointer",
                     borderRadius: "25rem",
-                    textTransform: "uppercase",
-                    fontFamily: "THICCCBOI",
-                    fontSize: 18,
-                    fontWeight: newActiveTab === "investors" ? 600 : 400,
+                    // textTransform: "uppercase",
+                    // fontFamily: "THICCCBOI",
+                    fontSize: isMobile ? "14px" : "18px",
+                  fontWeight: newActiveTab === "investors" ? "700" : "500",
+                    // fontWeight: newActiveTab === "investors" ? 600 : 400,
                   }}
                 >
                   Investors
@@ -89,7 +89,7 @@ const HowItWorks = () => {
                     : "transparent",
                   borderRadius: "25rem",
                   padding: "2px",
-                  marginBottom: "12px",
+                  margin: "5px",
                   width: "max-content",
                 }}
                 onClick={() => setNewActiveTab("business")}
@@ -97,16 +97,17 @@ const HowItWorks = () => {
                 <button
                   className="tab-button"
                   style={{
-                    padding: "16px 36px",
+                    padding: isMobile ? "10px 20px" : "16px 36px",
                     backgroundColor: "#fafafa",
                     border: "none",
                     color: "#000000",
                     cursor: "pointer",
                     borderRadius: "25rem",
-                    textTransform: "uppercase",
-                    fontFamily: "THICCCBOI",
-                    fontSize: 18,
-                    fontWeight: newActiveTab === "business" ? 600 : 400,
+                    // textTransform: "uppercase",
+                    // fontFamily: "THICCCBOI",
+                    fontSize: isMobile ? "14px" : "18px",
+                  fontWeight: newActiveTab === "business" ? 700 : 500,
+                    // fontWeight: newActiveTab === "business" ? 600 : 400,
                   }}
                 >
                   Business Compaigners
@@ -114,7 +115,7 @@ const HowItWorks = () => {
               </div>
             </div>
 
-            <div className="w-tab-content">
+            <div className="w-tab-content mt-4">
               {newActiveTab === "investors" && (
                 <div data-w-tab="Tab 1" className="tab-pa1 w-tab-pane w--tab-active">
                   <div
@@ -252,9 +253,9 @@ const HowItWorks = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="w-layout-blockcontainer container-5 w-container">
+                  <div className="w-layout-blockcontainer container-5 w-container p-14">
                     <h1 className="heading-5">Features For Investors</h1>
-                    <Carousel className="w-full max-w-[800px] mx-auto p-5">
+                    <Carousel className="w-full mx-auto p-5">
                         <CarouselContent >
                           <CarouselItem className="md:basis-1/3 lg:basis-1/4">
                             <CardItems heading="Dashboard" img={"/images/Rectangle-16.png"} />
@@ -421,9 +422,9 @@ const HowItWorks = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="w-layout-blockcontainer container-5 w-container">
+                  <div className="w-layout-blockcontainer container-5 w-container p-14">
                     <h1 className="heading-5">Features For Business Campaigners</h1>
-                      <Carousel className="w-full max-w-[800px] mx-auto p-5">
+                      <Carousel className="w-full mx-auto p-5">
                         <CarouselContent >
                           <CarouselItem className="md:basis-1/3 lg:basis-1/4">
                             <CardItems heading="Dashboard" img={"/images/Rectangle-16.png"} />

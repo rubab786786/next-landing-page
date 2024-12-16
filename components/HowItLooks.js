@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 const HowItLooks = () => {
   const [activeTab, setActiveTab] = useState("mobile");
   const [isMobile, setIsMobile] = useState(false);
+  
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
     handleResize(); // Initial check

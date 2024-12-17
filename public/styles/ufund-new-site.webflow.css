@@ -951,7 +951,7 @@
   flex-direction: column;
   align-items: center;
   max-width: 1600px;
-  margin-top: -141px;
+  margin-top: -185px;
   margin-left: 130px;
   display: flex;
   position: relative;
@@ -1123,7 +1123,7 @@
 .paragraph-7 {
   color: #1d222d;
   text-align: center;
-  width: 60%;
+  /* width: 60%; */
   font-family: Inter, sans-serif;
   font-size: 18px;
   line-height: 28px;
@@ -4465,7 +4465,7 @@
   }
 
   .paragraph-7 {
-    width: 55%;
+    /* width: 55%; */
   }
 
   .industries_arrow.left.new-home {
@@ -5089,7 +5089,7 @@
   }
 
   .paragraph-7 {
-    width: 75%;
+    /* width: 75%; */
   }
 
   .industries_arrow.left.new-home {

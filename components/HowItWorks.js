@@ -57,7 +57,9 @@ const HowItWorks = () => {
                                 onClick={() => setNewActiveTab("investors")}
                             >
                                 <button
-                                    className={`tab-button py-${isMobile ? 2 : 4} px-${isMobile ? 4 : 8} text-sm sm:text-lg font-${newActiveTab === "investors" ? 'bold' : 'normal'} bg-white border-none rounded-full`}
+                                    className={`tab-button text-sm sm:text-lg font-${newActiveTab === "investors" ? 'bold' : 'normal'} border-none rounded-full`}
+                                    style={{padding: isMobile ? "10px 20px" : "16px 36px",
+                                        backgroundColor: "#fafafa",}}
                                 >
                                     Investors
                                 </button>
@@ -76,7 +78,9 @@ const HowItWorks = () => {
                                 onClick={() => setNewActiveTab("business")}
                             >
                                 <button
-                                    className={`tab-button py-${isMobile ? 2 : 4} px-${isMobile ? 4 : 8} text-sm sm:text-lg font-${newActiveTab === "business" ? 'bold' : 'normal'} bg-white border-none rounded-full`}
+                                    className={`tab-button text-sm sm:text-lg font-${newActiveTab === "business" ? 'bold' : 'normal'} border-none rounded-full`}
+                                    style={{padding: isMobile ? "10px 20px" : "16px 36px",
+                                        backgroundColor: "#fafafa",}}
                                 >
                                     Business Campaigners
                                 </button>
@@ -191,7 +195,7 @@ const HowItWorks = () => {
 
                                 {/* Carousel for Investors */}
                                 <div className="w-layout-blockcontainer container-5 w-container px-16 pt-16 pb-0">
-                                    <h1 className="heading-5 text-xl sm:text-2xl mb-6">Features For Investors</h1>
+                                    <h1 className="heading-5 text-xl mb-6">Features For Investors</h1>
                                     <Carousel className="w-full mx-auto p-5">
                                         <CarouselContent>
                                             <CarouselItem className="md:basis-1/3 lg:basis-1/4">

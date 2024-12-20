@@ -37,7 +37,7 @@
 
 .w-layout-layout {
   grid-row-gap: 12px;
-  grid-column-gap: 12px;
+  grid-column-gap: 20px;
   grid-auto-columns: 1fr;
   justify-content: center;
   padding: 20px;
@@ -303,8 +303,8 @@
 .brix---header-wrapper {
   background-color: #14142b00;
   margin-bottom: -140px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -407,7 +407,7 @@
 
 .spark-button-play.spark-icon-play-button.play {
   z-index: auto;
-  grid-column-gap: 18px;
+  grid-column-gap: 8px;
   color: #fff;
   background-color: #0000;
   background-image: none;
@@ -468,7 +468,7 @@
 }
 
 .spark-button.spark-icon-left-button {
-  grid-column-gap: 12px;
+  grid-column-gap: 8px;
   background-color: #0000;
   border-width: 2px;
   border-color: #fff;
@@ -545,7 +545,7 @@
   grid-template-rows: auto;
   grid-template-columns: 1fr;
   grid-auto-columns: 1fr;
-  /* margin-bottom: 10px; */
+  margin-bottom: 14px;
   /* padding-top: .3rem;
   padding-bottom: .3rem; */
   display: grid;
@@ -880,7 +880,7 @@
 
 .feature-sub-paragraph {
   color: #1d222d;
-  margin-bottom: 16px;
+  margin-bottom: 30px;
   font-family: Inter, sans-serif;
   font-size: 17px;
   line-height: 22px;
@@ -954,7 +954,7 @@
   flex-direction: column;
   align-items: center;
   max-width: 1600px;
-  margin-top: -185px;
+  margin-top: -190px;
   margin-left: 130px;
   display: flex;
   position: relative;
@@ -1041,7 +1041,9 @@
 }
 
 .cell-im {
-  padding-left: 40px;
+  padding-left: 80px;
+  word-spacing:0.5px;
+  letter-spacing:0.2px;
 }
 
 .item {
@@ -1054,14 +1056,14 @@
 
 .feature-section-1 {
   background-color: #f8f7fc00;
-  padding-top: 80px;
+  /* padding-top: 80px; */
   padding-bottom: 0;
   overflow: hidden;
 }
 
 .a {
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
   grid-template: "."
                  "."
                  "."
@@ -1499,6 +1501,55 @@
   inset: auto 0% 0% auto;
 }
 
+.tab_button_outer {
+  background: transparent;
+  border-radius: 4px; /* Small radius for subtle round effect */
+  padding: 2px;
+  max-width: none; /* Button width will match the card width */
+  height: auto;
+  margin: 0 19px 20px 19px;
+}
+
+.tab_button_outer button {
+  display: flex;              /* Make the button a flex container */
+  align-items: center;         /* Vertically center items */
+  justify-content: center;     /* Horizontally center items */
+  width: 100%;                 /* Full width for the button inside the card */
+  color: #a80a0a;              /* Text color */
+  border-radius: 5px;          /* Small border radius */
+  padding: 7px;               /* Adjust padding for a balanced look */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.tab_button_outer button img {
+  margin-left: 5px;           /* Add space between the text and the image */
+  width: 20px;                 /* Set a specific width for the image */
+  height: auto;                /* Maintain the image's aspect ratio */
+}
+
+
+.tab_button_outer.active {
+  background: linear-gradient(90deg, #841524 0.85%, #E83A3D 101.71%);
+  border-radius: 5px; /* Small radius */
+  padding: 2px;
+  width: none; /* Full width */
+  border: none;
+}
+
+.downloadButton button {
+  width: 100%; /* Full width for the button inside the card */
+  margin: 0;
+  padding: 14px; /* Adjust padding */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 5px; /* Small radius for a clean look */
+}
+
 .spark-buttonpricing-button.spark-pricing-icon-button.price:hover {
   color: #fff;
   object-fit: fill;
@@ -1664,8 +1715,8 @@
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: auto;
-  padding-top: 4.5rem;
-  padding-bottom: 4.5rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
   overflow: hidden;
 }
 
@@ -1755,8 +1806,8 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1280px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   box-shadow: 0 6px 20px #0000000f;
 }
@@ -1846,8 +1897,8 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 4.5rem;
-  padding-bottom: 4.5rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
   overflow: hidden;
 }
 
@@ -2004,7 +2055,7 @@
   background-image: url('/images/bg-1-2-1.png');
   background-position: 50% 100%;
   background-size: cover;
-  padding: 100px 40px 120px;
+  padding: 70px 40px 70px;
   overflow: hidden;
 }
 
@@ -2042,7 +2093,7 @@
 }
 
 .brix---footer-list-item {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   padding-left: 0;
 }
 
@@ -2835,9 +2886,9 @@
   color: #767b86;
   text-transform: uppercase;
   font-family: Inter, sans-serif;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 600;
-  line-height: 16px;
+  line-height: 12px;
 }
 
 .brix---social-media-grid-left-3 {
@@ -2964,8 +3015,8 @@
 }
 
 .cell-39 {
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-column-gap: 8px;
+  grid-row-gap: 6px;
 }
 
 .mg-bottom-40px {
@@ -4485,7 +4536,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: scroll;
-    padding-top: 4.5rem;
+    /* padding-top: 4.5rem; */
     padding-bottom: 4.5rem;
   }
 
@@ -4547,6 +4598,8 @@
 
   .heading-4 {
     font-size: 10px;
+    word-spacing: 0.5px;
+    letter-spacing: 0.2px;
   }
 
   .app {
@@ -4606,12 +4659,13 @@
     color: #767b86;
     font-size: 16px;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 24px;
   }
 
   .brix---paragraph-default {
     color: #767b86;
     font-size: 15px;
+    line-height: 24px;
   }
 
   .brix---footer-bottom {
@@ -4659,7 +4713,10 @@
   }
 
   .contact-txt-2 {
-    color: #767b86;
+    color: #c7c7c7;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
   }
 
   .quick-stack-22 {

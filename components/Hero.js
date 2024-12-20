@@ -181,59 +181,116 @@ const Hero = () => {
                 <a
                   href="#"
                   className="spark-button-play spark-icon-play-button play w-inline-block w-lightbox"
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontFamily: "Inter",
+                    padding: "14px 35px", // Adjust padding for styling
+                    borderRadius: "4px", // Rounded corners
+                    position: "relative",
+                    overflow: "hidden", // Ensure proper border radius
+                    border: "2px solid transparent", // Transparent base for gradient border
+                  }}
                 >
-                  <div className="spark-small-icon w-embed">
-                    <svg
-                      width={32}
-                      height={32}
-                      viewBox="0 0 32 32"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M15.3334 2.66667C17.8386 2.66667 20.2876 3.40956 22.3706 4.80139C24.4537 6.19322 26.0772 8.17148 27.0359 10.486C27.9946 12.8005 28.2454 15.3474 27.7567 17.8045C27.268 20.2616 26.0616 22.5186 24.2901 24.29C22.5186 26.0615 20.2617 27.2679 17.8046 27.7566C15.3475 28.2454 12.8006 27.9945 10.4861 27.0358C8.17156 26.0771 6.1933 24.4536 4.80147 22.3706C3.40964 20.2875 2.66675 17.8386 2.66675 15.3333C2.66675 11.9739 4.00127 8.75211 6.37673 6.37665C8.75219 4.00119 11.974 2.66667 15.3334 2.66667Z"
-                        stroke="url(#paint0_linear_141_713)"
-                        strokeWidth={2}
-                        strokeMiterlimit={10}
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M19.3335 15.3331C19.3335 14.2451 13.7908 10.7851 13.1615 11.4077C12.5322 12.0304 12.4722 18.5651 13.1615 19.2464C13.8508 19.9277 19.3335 16.4077 19.3335 15.3331Z"
-                        stroke="url(#paint1_linear_141_713)"
-                        strokeWidth={2}
-                        strokeMiterlimit={10}
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <defs>
-                        <linearGradient
-                          id="paint0_linear_141_713"
-                          x1="2.88327"
-                          y1="19.718"
-                          x2="28.4331"
-                          y2="19.718"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stopColor="#841524" />
-                          <stop offset={1} stopColor="#E83A3D" />
-                        </linearGradient>
-                        <linearGradient
-                          id="paint1_linear_141_713"
-                          x1="12.7237"
-                          y1="16.7179"
-                          x2="19.4475"
-                          y2="16.7179"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stopColor="#841524" />
-                          <stop offset={1} stopColor="#E83A3D" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
+                  {/* Gradient Border */}
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                      background: "linear-gradient(90deg, #841524 0.85%, #E83A3D 101.71%)", // Gradient border
+                      zIndex: -1, // Push background behind content
+                      borderRadius: "inherit",
+                      padding: "2px", // Border thickness
+                      boxSizing: "border-box",
+                    }}
+                  ></span>
+                  {/* Inner Background */}
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: "2px",
+                      left: "2px",
+                      right: "2px",
+                      bottom: "2px",
+                      background: "#fff", // Inner white background
+                      zIndex: 0,
+                      borderRadius: "inherit",
+                    }}
+                  ></span>
+                  {/* SVG Icon */}
+                  <svg
+                    width={32}
+                    height={32}
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style={{
+                      zIndex: 1, // Ensure the icon appears above other elements
+                      marginRight: "2px", // Space between icon and text
+                    }}
+                  >
+                    <path
+                      d="M15.3334 2.66667C17.8386 2.66667 20.2876 3.40956 22.3706 4.80139C24.4537 6.19322 26.0772 8.17148 27.0359 10.486C27.9946 12.8005 28.2454 15.3474 27.7567 17.8045C27.268 20.2616 26.0616 22.5186 24.2901 24.29C22.5186 26.0615 20.2617 27.2679 17.8046 27.7566C15.3475 28.2454 12.8006 27.9945 10.4861 27.0358C8.17156 26.0771 6.1933 24.4536 4.80147 22.3706C3.40964 20.2875 2.66675 17.8386 2.66675 15.3333C2.66675 11.9739 4.00127 8.75211 6.37673 6.37665C8.75219 4.00119 11.974 2.66667 15.3334 2.66667Z"
+                      stroke="url(#paint0_linear_141_713)"
+                      strokeWidth={2}
+                      strokeMiterlimit={10}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M19.3335 15.3331C19.3335 14.2451 13.7908 10.7851 13.1615 11.4077C12.5322 12.0304 12.4722 18.5651 13.1615 19.2464C13.8508 19.9277 19.3335 16.4077 19.3335 15.3331Z"
+                      stroke="url(#paint1_linear_141_713)"
+                      strokeWidth={2}
+                      strokeMiterlimit={10}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_141_713"
+                        x1="2.88327"
+                        y1="19.718"
+                        x2="28.4331"
+                        y2="19.718"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="#841524" />
+                        <stop offset={1} stopColor="#E83A3D" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint1_linear_141_713"
+                        x1="12.7237"
+                        y1="16.7179"
+                        x2="19.4475"
+                        y2="16.7179"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="#841524" />
+                        <stop offset={1} stopColor="#E83A3D" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  {/* Button Text */}
+                  <div
+                    className="spark-button-text-copy"
+                    style={{
+                      fontFamily: "Inter",
+                      fontSize: "18px",
+                      fontWeight: 700,
+                      background: "linear-gradient(90deg, #841524 0.85%, #E83A3D 101.71%)", // Gradient text
+                      WebkitBackgroundClip: "text",
+                      color: "transparent", // Transparent to display gradient text
+                      zIndex: 1, // Ensure text is above all
+                    }}
+                  >
+                    Watch Demo Now
                   </div>
-                  <div className="spark-button-text-copy" style={{ fontFamily: "Inter" }}>Watch Demo Now</div>
                 </a>
+
               </div>
             </div>
 

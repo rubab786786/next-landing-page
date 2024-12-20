@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 
 const CounterSection = () => {
   const counters = [
-    { id: 1, value: 45, label: "R&amp;D Projects", image: "/images/projects.svg" },
+    { id: 1, value: 45, label: "R&D Projects", image: "/images/projects.svg" },
     { id: 2, value: 1478, label: "Active Users", image: "/images/users.svg" },
     { id: 3, value: 159, label: "Active Campaigners", image: "/images/compaigns.svg" },
     { id: 4, value: 1319, label: "Active Investors", image: "/images/Active-Investors.svg" },
@@ -57,11 +57,14 @@ const CounterSection = () => {
 
   return (
     <>
-    <section className="counter-section" ref={sectionRef}>
-          <div className="w-layout-blockcontainer counter-conatiner w-container">
+      <section className="counter-section" ref={sectionRef}
+      style={{
+        boxShadow: "0 6px 20px #0000000f",
+      }}>
+        <div className="w-layout-blockcontainer counter-conatiner w-container">
           {counters.map((counter, index) => (
             <div
-            key={counter.id}
+              key={counter.id}
               id="w-node-b26f0831-8cc7-508a-c68f-db2fe4d30b23-fbb97df6"
               className="w-layout-layout quick-stack-2 wf-layout-layout"
             >
@@ -74,8 +77,8 @@ const CounterSection = () => {
               </div>
             </div>
           ))}
-          </div>
-        </section>
+        </div>
+      </section>
     </>
   )
 }

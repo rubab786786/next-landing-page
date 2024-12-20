@@ -280,37 +280,83 @@ const Services = () => {
                               </div>
                             </div>
                           </div>
-                          <a
+                          {/* <a
                             href="https://webapp.ufund.online/login"
                             target="_blank"
                             className="spark-buttonpricing-button spark-pricing-icon-button price w-inline-block"
+                            style={{
+                              display: "inline-flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                              padding: "16px 40px",
+                              borderRadius: "12px",// Border radius for rounded corners
+                              border: "2px solid transparent",
+                              borderImage: "linear-gradient(90deg, #841524 0.85%, #E83A3D 101.71%)",
+                              borderImageSlice: 1,
+                              textDecoration: "none",
+                              backgroundClip: "text",
+                              color: "transparent",
+                              background: "linear-gradient(90deg, #841524 0.85%, #E83A3D 101.71%)",
+                              WebkitBackgroundClip: "text",
+                            }}
                           >
-                            <p className="button-text">Get Started Now</p>
-                            <div className="service-icon-2 w-embed">
+                            <p
+                              style={{
+                                margin: 0,
+                                fontSize: "18px",
+                                fontWeight: "bold",
+                                background: "linear-gradient(90deg, #841524 0.85%, #E83A3D 101.71%)", // Gradient for text color
+                                WebkitBackgroundClip: "text",
+                                color: "transparent",
+                              }}
+                              className="button-text"
+                            >
+                              Get Started Now
+                            </p>
+                            <div
+                              className="service-icon-2"
+                              style={{
+                                marginLeft: "5px", // Space between text and icon
+                              }}
+                            >
                               <svg
-                                width="100%"
-                                height="100%"
+                                width="24"
+                                height="24"
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
+                                style={{
+                                  fill: "url(#icon-gradient)", // Gradient for the icon
+                                }}
                               >
+                                <defs>
+                                  <linearGradient id="icon-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stopColor="#AA2020" />
+                                    <stop offset="100%" stopColor="#CA207F" />
+                                  </linearGradient>
+                                </defs>
                                 <path
                                   fillRule="evenodd"
                                   clipRule="evenodd"
                                   d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z"
-                                  fill="currentColor"
-                                  fillOpacity="0.94"
                                 />
                                 <path
                                   fillRule="evenodd"
                                   clipRule="evenodd"
                                   d="M11.2929 4.29289C11.6834 3.90237 12.3166 3.90237 12.7071 4.29289L19.7071 11.2929C20.0976 11.6834 20.0976 12.3166 19.7071 12.7071L12.7071 19.7071C12.3166 20.0976 11.6834 20.0976 11.2929 19.7071C10.9024 19.3166 10.9024 18.6834 11.2929 18.2929L17.5858 12L11.2929 5.70711C10.9024 5.31658 10.9024 4.68342 11.2929 4.29289Z"
-                                  fill="currentColor"
-                                  fillOpacity="0.94"
                                 />
                               </svg>
                             </div>
-                          </a>
+                          </a> */}
+                          <div className="downloadButton">
+                            <div className="tab_button_outer active">
+                              <button style={{
+                                fontSize: "18px",
+                                fontWeight: "bold",
+                              }}>Get started Now <img src="/images/frames.png" alt="Download" /></button>
+                            </div>
+                          </div>
+
                         </div>
                         <img
                           src="/images/Frame.png"
@@ -595,7 +641,7 @@ const Services = () => {
                               </div>
                             </div>
                           </div>
-                          <a
+                          {/* <a
                             href="https://webapp.ufund.online/login"
                             target="_blank"
                             className="spark-buttonpricing-button spark-pricing-icon-button price w-inline-block"
@@ -625,7 +671,15 @@ const Services = () => {
                                 />
                               </svg>
                             </div>
-                          </a>
+                          </a> */}
+                          <div className="downloadButton">
+                            <div className="tab_button_outer active">
+                              <button style={{
+                                fontSize: "18px",
+                                fontWeight: "bold",
+                              }}>Get started Now <img src="/images/frames.png" alt="Download" /></button>
+                            </div>
+                          </div>
                         </div>
                         <div className="uui-pricing09_popular-label" />
                       </div>
@@ -902,7 +956,7 @@ const Services = () => {
                               </div>
                             </div>
                           </div>
-                          <a
+                          {/* <a
                             href="https://webapp.ufund.online/login"
                             target="_blank"
                             className="spark-buttonpricing-button spark-pricing-icon-button price w-inline-block"
@@ -932,7 +986,15 @@ const Services = () => {
                                 />
                               </svg>
                             </div>
-                          </a>
+                          </a> */}
+                          <div className="downloadButton">
+                            <div className="tab_button_outer active">
+                              <button style={{
+                                fontSize: "18px",
+                                fontWeight: "bold",
+                              }}>Get started Now <img src="/images/frames.png" alt="Download" /></button>
+                            </div>
+                          </div>
                         </div>
                         <img
                           src="/images/Frame.png"

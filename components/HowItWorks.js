@@ -24,7 +24,7 @@ const HowItWorks = () => {
     return (
         <section id="how-it-works" className="feature-section-1">
             <div className="w-layout-blockcontainer feature-container-1 w-container">
-                <div className={`w-full ${isMobile ? 'px-5 py-8' : 'px-0 py-16'} text-center`}>
+                <div className={`w-full ${isMobile ? 'px-5 py-8' : 'px-0 pt-16'} text-center`}>
                     <h1
                         className={`pr-heading text-${isMobile ? '2xl' : '4xl'} font-bold`}
                         style={{ fontFamily: "THICCCBOI" }}
@@ -59,7 +59,7 @@ const HowItWorks = () => {
                                 <button
                                     className={`tab-button text-sm sm:text-lg font-${newActiveTab === "investors" ? 'bold' : 'normal'} border-none rounded-full`}
                                     style={{
-                                        padding: isMobile ? "10px 20px" : "16px 36px",
+                                        padding: isMobile ? "10px 20px" : "16px 42px",
                                         backgroundColor: "#fafafa",
                                     }}
                                 >
@@ -82,7 +82,7 @@ const HowItWorks = () => {
                                 <button
                                     className={`tab-button text-sm sm:text-lg font-${newActiveTab === "business" ? 'bold' : 'normal'} border-none rounded-full`}
                                     style={{
-                                        padding: isMobile ? "10px 20px" : "16px 36px",
+                                        padding: isMobile ? "10px 20px" : "16px 42px",
                                         backgroundColor: "#fafafa",
                                     }}
                                 >
@@ -96,7 +96,7 @@ const HowItWorks = () => {
                             <div className="tab-pa1 w-tab-pane w--tab-active mt-4">
                                 <div className="w-layout-layout quick-stack-1 wf-layout-layout">
                                     <div className="flex flex-col sm:flex-row items-center sm:items-start w-full">
-                                        <div className="cell-im flex-1 sm:w-1/2 px-4 mb-4 sm:mb-0" style={{ textAlign: "left" }}>
+                                        <div className="cell-im flex-1 sm:w-1/2 pr-8 mb-4 sm:mb-0" style={{ textAlign: "left" }}>
                                             <h1 className="text-lg sm:text-xl">Just follow these steps:</h1>
                                             <p className="text-sm sm:text-base">
                                                 Our intuitive signup process ensures easy access to our platform, allowing you to start investing in no time.
@@ -230,7 +230,7 @@ const HowItWorks = () => {
                             <div className="tab-pa1 w-tab-pane w--tab-active mt-4">
                                 <div className="w-layout-layout quick-stack-1 wf-layout-layout">
                                     <div className="flex flex-col sm:flex-row items-center sm:items-start w-full">
-                                        <div className="cell-im flex-1 sm:w-1/2 px-4 mb-4 sm:mb-0" style={{ textAlign: "left" }}>
+                                        <div className="cell-im flex-1 sm:w-1/2 pr-8 mb-4 sm:mb-0" style={{ textAlign: "left" }}>
                                             <h1 className="text-lg sm:text-xl">Just follow these steps:</h1>
                                             <p className="text-sm sm:text-base">
                                                 Our intuitive signup process ensures easy access to our

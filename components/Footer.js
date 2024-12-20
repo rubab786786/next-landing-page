@@ -119,7 +119,7 @@ const Footer = () => {
                     <ul role="list" className="brix---footer-list-wrapper">
                       <li className="brix---footer-list-item">
                         <a href="#" className="brix---footer-link">
-                          .Actiwires LLC DBA&nbsp;UFUND&nbsp;filled with SEC a Reg D
+                          .Actiwires LLC filled with SEC a Reg D
                           506(c) and is .Registered with FINCEN
                         </a>
                       </li>

@@ -353,7 +353,7 @@ const Services = () => {
                               <button style={{
                                 fontSize: "18px",
                                 fontWeight: "bold",
-                              }}>Get started Now <img src="/images/frames.png" alt="Download" /></button>
+                              }}>Get started Now <img src="/images/Frames.png" alt="Download" /></button>
                             </div>
                           </div>
 
@@ -677,7 +677,7 @@ const Services = () => {
                               <button style={{
                                 fontSize: "18px",
                                 fontWeight: "bold",
-                              }}>Get started Now <img src="/images/frames.png" alt="Download" /></button>
+                              }}>Get started Now <img src="/images/Frames.png" alt="Download" /></button>
                             </div>
                           </div>
                         </div>
@@ -992,7 +992,7 @@ const Services = () => {
                               <button style={{
                                 fontSize: "18px",
                                 fontWeight: "bold",
-                              }}>Get started Now <img src="/images/frames.png" alt="Download" /></button>
+                              }}>Get started Now <img src="/images/Frames.png" alt="Download" /></button>
                             </div>
                           </div>
                         </div>
